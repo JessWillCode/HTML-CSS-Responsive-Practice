@@ -34,192 +34,186 @@ footer, header, hgroup, menu, nav, section {
     padding:0;
     margin:0;
     max-width:100%;
-    border:1px solid grey; 
+    /* border:1px solid grey;  */
 }
 
-html {
+/*General Styles*/
+html{
     font-size:62.5%;
 }
-
-body {
+body{
     font-size:1.8rem;
     line-height:1.5;
     color:#4f4f4f;
     background-color:#FBFFFB;
+    font-family: 'Source Sans Pro', sans-serif;
 }
-h1 {
-    color: #FBFFFB;
+h1{
+    color:#FBFFFB;
+    font-size:6rem;
     font-family: 'Oxygen', sans-serif;
 }
-
-h2 {
+h2{
     font-size:3rem;
 }
-
-h3 {
+h3{
     font-size:2.2rem;
-
 }
-
-h2, h3 {
+h2, h3{
     color:#266035;
-    font-family: 'Oxygen', sans-serif;
     text-align:center;
+    font-family: 'Oxygen', sans-serif;
     margin-bottom:5%;
 }
-
-a {
+a{
+    text-decoration: none;
     color:#266035;
-    text-decoration:none;
     font-family: 'Source Sans Pro', sans-serif;
 }
-
-button {
+button{
     font-family: 'Source Sans Pro', sans-serif;
     font-size:1.8rem;
-    padding: 2% 4%;
+    padding:2% 4%;
     margin-top:4%;
 }
-
-section, footer {
+section, footer{
     padding:4% 0;
 }
-
+/*helper classes*/
 .bg-img{
-    background-repeat:no-repeat;
-    background-size:cover;
-    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
-nav {
+/*header section styles*/
+nav{
     display:flex;
     justify-content: space-between;
-    position: fixed;
-    width:100%
+    position:fixed;
+    width:100%;
     top:0;
-    z-index: 999;
+    z-index: 999; /*everything should scroll behind this*/
     background-color:rgba(255, 255, 255, 0.8);
 }
-
-.logo {
+.logo{
     width:5%;
 }
-
 .links{
     width:50%;
     display:flex;
-    justify-content:space-evenly;
-    align-items:center;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
-#top {
+/*top section styles*/
+#top{
     height:90vh;
-    background-image: url('../images/header.jpg')
-    background-position:bottom;
+    background-image: url('../images/header.jpg');
+    background-position: bottom;
     display:flex;
-    align-items:center;
+    justify-content: center;
+    align-items: center;
     text-align:center;
 }
-
-#top button {
+#top button{
     border:2px solid #266035;
     color:#266035;
     background-color:#fff;
     transition:2s;
 }
-
-#top button:hover {
+#top button:hover{
     color:#fff;
     background-color:#266035;
     border:2px solid #fff;
 }
-/*About*/
+
+/*About Section Styles*/ 
 #about{
-    height:60vh;
-    background-image: url('../image/about-img.jpg)
+    height:85vh;
+    background-image:url('../images/about-img.jpg');
     display:flex;
-    justify-content:flex-end;
-    align-items:center;
+    justify-content: flex-end;
+    align-items: center;
 }
-#about div {
+#about div{
     width:20%;
     margin-right:10%;
 }
-/*Shop Styles*/
-.container {
+
+/*Shop Section Styles*/
+#shop{
+    padding-bottom:0;
+}
+.container{
     display:flex;
-    flex-wrap: wrap;
+    flex-wrap:wrap;
 }
 
-.cacti, .tropicals, .succulents, .text {
+.cacti, .tropicals, .succulants, .text{
     width:50%;
 }
-.text {
+.text{
     padding:5%;
     display:flex;
-    justify-content:center;
+    justify-content: center;
     text-align:center;
 }
-
-.text div {
+.text div{
     width:60%;
 }
-
-.text button {
+.text button{
     background-color:#266035;
     color:#fff;
     border:2px solid #266035;
     transition:2s;
 }
-
-.text button:hover  {
+.text button:hover{
     background-color:#fff;
     color:#266035;
 }
-
-.succulents {
-    background-image:url('../images/succulents.jpg');
+.succulants{
+    background-image:url('../images/succulants.jpg');
 }
-.cacti {
+.cacti{
     background-image:url('../images/cacti.jpg');
 }
-.tropicals {
+.tropicals{
     background-image:url('../images/tropicals.jpg');
 }
 
+/*footer section styles*/
 footer{
     background-color:#266035;
     display:flex;
     flex-wrap:wrap;
     color:#fff;
 }
-
 footer h2{
     color:#fff;
-    width:100%
+    width:100%;
 }
 footer a, footer h3{
     color:#fff;
     text-align:left;
 }
-
-.right, .left {
+.right, .left{
     width:50%;
     display:flex;
-    justify-content:center;
-    align-items:center;
+    justify-content: center;
+    align-items: center;
 }
 .left div.info{
     width:60%;
     line-height:2.5;
 }
-.right img {
+.right img{
     width:60%;
 }
-.bottom {
+.bottom{
     width:100%;
     text-align:right;
 }
 .bottom p{
     margin-right:5%;
-}
+    margin-top:2%;
